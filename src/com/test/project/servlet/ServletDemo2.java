@@ -1,14 +1,12 @@
 package com.test.project.servlet;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Properties;
 
@@ -28,6 +26,7 @@ public class ServletDemo2 extends HttpServlet {
 //        text2();
 //        text3();
         text4(req, resp);
+
     }
 
     /**

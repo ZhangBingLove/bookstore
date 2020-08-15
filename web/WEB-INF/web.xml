@@ -4,6 +4,21 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+
+    <servlet>
+        <servlet-name>servletRequestDemo1</servlet-name>
+        <servlet-class>com.test.project.reqandresp.ServletRequestDemo1</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>servletRequestDemo1</servlet-name>
+        <url-pattern>/servletrequestdemo1</url-pattern>
+    </servlet-mapping>
+
+
+    <!--    servlet 学习 -->
+    <!--    servlet 学习 -->
+
     <context-param>
         <param-name>encoding</param-name>
         <param-value>UTF-8</param-value>
@@ -67,5 +82,7 @@
         <url-pattern>/servletDemo2</url-pattern>
     </servlet-mapping>
 
+    <!--    servlet 学习 -->
+    <!--    servlet 学习 -->
 
 </web-app>
