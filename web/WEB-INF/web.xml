@@ -4,7 +4,61 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <!--   ############# cookie and session  ################-->
+    <servlet>
+        <servlet-name>cookiedemo1</servlet-name>
+        <servlet-class>com.test.project.cookieandsession.CookieDemo1</servlet-class>
+    </servlet>
 
+    <servlet-mapping>
+        <servlet-name>cookiedemo1</servlet-name>
+        <url-pattern>/cookiedemo1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cookiedemo2</servlet-name>
+        <servlet-class>com.test.project.cookieandsession.CookieDemo2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cookiedemo2</servlet-name>
+        <url-pattern>/cookiedemo2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showAllBooksServlet</servlet-name>
+        <servlet-class>com.test.project.cookieandsession.session.ShowAllBooksServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>showAllBooksServlet</servlet-name>
+        <url-pattern>/showAllBooksServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>addCart</servlet-name>
+        <servlet-class>com.test.project.cookieandsession.session.AddCart</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>addCart</servlet-name>
+        <url-pattern>/addCart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>showCart</servlet-name>
+        <servlet-class>com.test.project.cookieandsession.session.ShowCart</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>showCart</servlet-name>
+        <url-pattern>/showCart</url-pattern>
+    </servlet-mapping>
+
+
+    <!--   ############# cookie and session  ################-->
+
+    <!--   ############# Request and Responce  ################-->
     <servlet>
         <servlet-name>servletRequestDemo1</servlet-name>
         <servlet-class>com.test.project.reqandresp.ServletRequestDemo1</servlet-class>
@@ -15,10 +69,19 @@
         <url-pattern>/servletrequestdemo1</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>servletRequestDemo2</servlet-name>
+        <servlet-class>com.test.project.reqandresp.ServletRequestDemo2</servlet-class>
+    </servlet>
 
-    <!--    servlet 学习 -->
-    <!--    servlet 学习 -->
+    <servlet-mapping>
+        <servlet-name>servletRequestDemo2</servlet-name>
+        <url-pattern>/servletrequestdemo2</url-pattern>
+    </servlet-mapping>
 
+    <!--   ############# Request and Responce  ################-->
+
+    <!--   ############# servlet  ################-->
     <context-param>
         <param-name>encoding</param-name>
         <param-value>UTF-8</param-value>
@@ -81,8 +144,6 @@
         <servlet-name>servletDemo2</servlet-name>
         <url-pattern>/servletDemo2</url-pattern>
     </servlet-mapping>
-
-    <!--    servlet 学习 -->
-    <!--    servlet 学习 -->
+    <!--   ############# servlet  ################-->
 
 </web-app>
