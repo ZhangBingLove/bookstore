@@ -13,29 +13,14 @@ import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 添加到购物车
+ */
 public class AddCart extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-//        response.setContentType("text/html;charset=UTF-8");
-//        PrintWriter out = response.getWriter();
-//        //根据id得到书
-//        String id = request.getParameter("id");
-//        Book book = DBUtil.findBookById(id);
-//        //得到session对象
-//        HttpSession session = request.getSession();
-//        //从session中取出list（购物车）
-//        List<Book> list = (List<Book>)session.getAttribute("cart");
-//        if(list==null){
-//            list = new ArrayList<Book>();
-//        }
-//        list.add(book);
-//
-//        session.setAttribute("cart", list);//把list放回到session域中
-//
-//        out.print("购买成功！");
-//        String url = request.getContextPath()+"/servlet/showAllBooksServlet";
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         //根据id得到书
@@ -52,7 +37,8 @@ public class AddCart extends HttpServlet {
 
         session.setAttribute("cart", list);
         out.write("购买成功! ");
-
+        String url = request.getContextPath()+"/showAllBooksServlet";
+        response.setHeader("refresh", "2;url="+response.encodeURL(url));
     }
 
     @Override

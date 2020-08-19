@@ -1,16 +1,14 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: mac
-  Date: 2020-08-14
-  Time: 21:43
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@ page import="java.util.Date" %>
+<%@ page contentType="text/html;charset=UTF-8" pageEncoding="UTF-8" %>
 <html>
-  <head>
+<head>
     <title>$Title$</title>
-  </head>
-  <body>
-  $ENDas$
-  </body>
+</head>
+<body>
+<%
+    Date date = new Date();
+    out.write(date.toLocaleString());
+%>
+
+</body>
 </html>

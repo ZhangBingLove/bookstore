@@ -4,6 +4,15 @@
          xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
+    <!--   ############# jsp ################-->
+
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+
+    <!--   ############# jsp ################-->
+
     <!--   ############# cookie and session  ################-->
     <servlet>
         <servlet-name>cookiedemo1</servlet-name>
@@ -53,6 +62,26 @@
     <servlet-mapping>
         <servlet-name>showCart</servlet-name>
         <url-pattern>/showCart</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowAllBooks</servlet-name>
+        <servlet-class>com.test.project.cookieandsession.history.ShowAllBooks</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowAllBooks</servlet-name>
+        <url-pattern>/ShowAllBooks</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ShowBookDetail</servlet-name>
+        <servlet-class>com.test.project.cookieandsession.history.ShowBookDetail</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ShowBookDetail</servlet-name>
+        <url-pattern>/ShowBookDetail</url-pattern>
     </servlet-mapping>
 
 
