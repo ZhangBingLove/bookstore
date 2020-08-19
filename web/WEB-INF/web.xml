@@ -10,6 +10,16 @@
         <welcome-file>index.jsp</welcome-file>
     </welcome-file-list>
 
+    <servlet>
+        <servlet-name>DoLoginServlet</servlet-name>
+        <servlet-class>com.test.project.jsp.DoLoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DoLoginServlet</servlet-name>
+        <url-pattern>/DoLoginServlet</url-pattern>
+    </servlet-mapping>
+
 
     <!--   ############# jsp ################-->
 
