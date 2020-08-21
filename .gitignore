@@ -12,5 +12,3 @@ gen
 src/.DS_Store
 src/com/.DS_Store
 src/com/test/.DS_Store
-web/WEB-INF/classes/
-web/WEB-INF/lib/
