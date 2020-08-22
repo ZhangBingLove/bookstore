@@ -12,12 +12,12 @@
 </head>
 <body>
 
-<form method="post">
-    用 户 名:<input type="text" name="name"/><br>
-    密 码:<input type="password" name='password'/><br>
-    确认密码:<input type="password" name="repassword"/><br>
-    邮 箱:<input type="text" name="email"/><br>
-    生 日:<input type="text" name="birthday"/><br>
+<form action="${pageContext.request.contextPath}/RegisterServlet" method="post">
+    用 户 名:<input type="text" name="username"/> ${uf.msg.username}<br>
+    密 码:<input type="password" name="password"/>${uf.msg.password}<br>
+    确认密码:<input type="password" name="repassword"/>${uf.msg.repassword}<br>
+    邮 箱:<input type="text" name="email"/>${uf.msg.email}<br>
+    生 日:<input type="text" name="birthday"/>${uf.msg.birthday}<br>
     <input type="submit" value="注册"/>
 
 </form>

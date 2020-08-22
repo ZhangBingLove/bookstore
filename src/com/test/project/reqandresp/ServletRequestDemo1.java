@@ -107,7 +107,7 @@ public class ServletRequestDemo1 extends HttpServlet {
      */
     private void test7(HttpServletRequest request) {
         //获得请求消息头的信息
-        String header = request.getHeader("User-Agent");
+        String header = request.getHeader("UserDao-Agent");
         System.out.println(header);
 
         if (header.toLowerCase().contains("msie")) {

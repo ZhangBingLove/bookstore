@@ -52,7 +52,7 @@ public class User {
 
     @Override
     public String toString() {
-        return "User [userName=" + userName + ", pwd=" + pwd + ", sex=" + sex
+        return "UserDao [userName=" + userName + ", pwd=" + pwd + ", sex=" + sex
                 + ", hobby=" + Arrays.toString(hobby) + ", city=" + city + "]";
     }
 
